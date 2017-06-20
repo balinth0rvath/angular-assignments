@@ -15,6 +15,7 @@ export class ServersComponent implements OnInit {
   userName: string = '';
   emptyUserName: boolean = true;
   serverCreated: boolean = false;
+  servers = ['Testserver','Testserver 2'];
 
   constructor() {
     setTimeout(() => {
@@ -29,6 +30,7 @@ export class ServersComponent implements OnInit {
     this.serverCreationStatus = 'Server was created' + this.serverName;
     console.log(document.querySelector("button"));
     this.serverCreated = true;
+    this.servers.push(this.serverName);
   }
   
   onUpdateServerName(event: Event) {

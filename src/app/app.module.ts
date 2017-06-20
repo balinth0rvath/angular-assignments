@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ServerComponent} from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { SecretComponent } from './secret/secret.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ServersComponent } from './servers/servers.component';
     ServerComponent,
     ServersComponent,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    SecretComponent
   ],
   imports: [
     BrowserModule,
